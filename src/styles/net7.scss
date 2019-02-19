@@ -63,3 +63,12 @@ strong {
 	color: $secondary-color;
 	font-weight: bolder;
 }
+
+.cta {
+  justify-content: center;
+
+  @include breakpoint(large) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

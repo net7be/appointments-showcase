@@ -47,10 +47,11 @@
 
 // Helpers
 //@include foundation-float-classes;
-//@include foundation-flex-classes;
+@include foundation-flex-classes;
 @include foundation-visibility-classes;
 
 // Obvioulsy customized styles have to go after
 // all the foundation stuff for the cascade
 // to make sense:
 @import 'net7.scss';
+@import 'mobilenav.scss';

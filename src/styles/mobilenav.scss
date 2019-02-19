@@ -1,0 +1,47 @@
+#mobileNav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  /* ul has default margins, top and bottom */
+  margin: 0;
+  /* ul has a default padding */
+  padding-left: 0;
+  overflow-y: auto;
+  z-index: 999;
+  width: 300px;
+  transition: transform 0.8s;
+  /* Increase the translation if using a shadow */
+  transform: translateX(-110%);
+  height: 100vh;
+}
+
+#mobileNav a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #222;
+  display: block;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#mobileNav a:hover {
+  background-color: #ebebeb;
+}
+
+.shadow-that-might-look-bad {
+  box-shadow: 10px 0px 10px #333;
+}
+
+#mobileNavOverlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  /* This is behind the menu */
+  z-index: 900;
+}
