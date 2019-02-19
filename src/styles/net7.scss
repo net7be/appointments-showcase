@@ -4,48 +4,45 @@ body {
 	flex-direction: column;
 }
 
-body > section {
+main {
 	flex: 1;
 }
 
 header {
-  border-top: 5px solid #009ee0;
-  margin-bottom: 1.2rem;
+  border-top: 5px solid $primary-color;
 }
 
-h1, h2 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	color: #009ee0;
-	padding: 0;
-	margin: 1em 0;
+h1, h2, h3, h4 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: $secondary-color;
+}
+
+h2 {
+	color: $primary-color;
 }
 
 h3 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #009ee0;
-	padding: 0;
-	margin: 5px 0;
+	color: $primary-color;
 }
 
 h4 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 1.5em;
-	color: #172983;
-	padding: 0;
-	margin: 5px 0;
+	color: $secondary-color;
 }
 
 .illustration {
-	border-top: 2px solid #009ee0;
-	border-bottom: 20px solid #009ee0;
+	border-top: 2px solid $primary-color;
+	border-bottom: 20px solid $primary-color;
 }
 
 footer {
-	background: #009ee0;
+	background: $primary-color;
 	padding: 2em 0 1em 0;
 	color: #fff;
-	margin-top: 30px;
+  margin-top: 30px;
+  font-size: 0.85rem;
 }
 
 footer a {
@@ -54,7 +51,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #172983;
+	color: $secondary-color;
 }
 
 footer a.social {
@@ -63,6 +60,6 @@ footer a.social {
 }
 
 strong {
-	color: #172983;
+	color: $secondary-color;
 	font-weight: bolder;
 }

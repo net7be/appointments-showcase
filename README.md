@@ -80,3 +80,8 @@ Colors:
 This is supposed to hold all the SASS variables they use: https://raw.githubusercontent.com/zurb/foundation-sites/master/scss/settings/_settings.scss
 
 We need to create a _settings.scss file to import **before** the foundation one.
+
+# TODO
+- [ ] Font size is weird on mobile when compared to titles.
+- [ ] There are different images per language for the learn more screenshot.
+- [ ] Minify the images in static.
