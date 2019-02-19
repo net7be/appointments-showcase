@@ -90,6 +90,15 @@ const config = {
             outputPath: 'static/'
           }
         }]
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        options: {
+          helperDirs: path.join(__dirname, 'src/helpers'),
+          partialDirs: path.join(__dirname, 'src/partials'),
+          inlineRequires: '/static/'
+        }
       }
     ]
   },
@@ -122,7 +131,7 @@ module.exports = (env, argv) => {
   // Add the main index page here:
   config.plugins.push(
     new HtmlPlugin({
-      template: './src/index.html',
+      template: './src/pages/index.hbs',
       filename: 'index.html',
       minify: (argv.mode === 'production') ? minifyOptions : false
     })
