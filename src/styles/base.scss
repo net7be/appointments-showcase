@@ -1,3 +1,4 @@
+@import 'settings';
 @import 'node_modules/foundation-sites/scss/foundation';
 
 @include foundation-global-styles;
@@ -38,13 +39,18 @@
 @include foundation-dropdown-menu;
 
 // Layout components
-@include foundation-off-canvas;
-@include foundation-reveal;
-@include foundation-sticky;
+//@include foundation-off-canvas;
+//@include foundation-reveal;
+//@include foundation-sticky;
 @include foundation-title-bar;
 @include foundation-top-bar;
 
 // Helpers
 //@include foundation-float-classes;
-@include foundation-flex-classes;
+//@include foundation-flex-classes;
 @include foundation-visibility-classes;
+
+// Obvioulsy customized styles have to go after
+// all the foundation stuff for the cascade
+// to make sense:
+@import 'net7.scss';

@@ -71,3 +71,12 @@ I started with the following includes (using Flex grid instead of their new XY g
 ### Customizing the color scheme
 We need to import our color scheme from the Net7 site.
 
+Colors:
+* Light: #009ee0
+* Dark: #172983
+* Warning: #ffa500
+* Light text - Menu text: #aaa
+
+This is supposed to hold all the SASS variables they use: https://raw.githubusercontent.com/zurb/foundation-sites/master/scss/settings/_settings.scss
+
+We need to create a _settings.scss file to import **before** the foundation one.
