@@ -11,7 +11,7 @@
   overflow-y: auto;
   z-index: 999;
   width: 300px;
-  transition: transform 0.8s;
+  transition: transform 0.4s ease-out;
   /* Increase the translation if using a shadow */
   transform: translateX(-110%);
   height: 100vh;
@@ -30,8 +30,8 @@
   background-color: #ebebeb;
 }
 
-.shadow-that-might-look-bad {
-  box-shadow: 10px 0px 10px #333;
+.menu-shadow {
+  box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.4);
 }
 
 #mobileNavOverlay {
@@ -44,4 +44,8 @@
   width: 100vw;
   /* This is behind the menu */
   z-index: 900;
+}
+
+#menuBtn {
+  cursor: pointer;
 }

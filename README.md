@@ -81,7 +81,11 @@ This is supposed to hold all the SASS variables they use: https://raw.githubuser
 
 We need to create a _settings.scss file to import **before** the foundation one.
 
+# Where to put the showcase
+It should be linked from the actual RemindOthers app. login screen. We could just host it on the same domain using an alias like **/about**.
+
 # TODO
+- [ ] Add Babel.
 - [ ] Font size is weird on mobile when compared to titles.
 - [ ] There are different images per language for the learn more screenshot.
 - [ ] Minify the images in static.
