@@ -55,3 +55,24 @@
 // to make sense:
 @import 'net7.scss';
 @import 'mobilenav.scss';
+
+.menu-extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lang-selector {
+  display: flex;
+  align-items: center;
+  border: 2px solid $primary-color;
+}
+
+.lang-selector > img {
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.lang-selector > select {
+  margin: 0;
+}
