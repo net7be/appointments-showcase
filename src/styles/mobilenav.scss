@@ -1,20 +1,24 @@
 #mobileNav {
-  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  z-index: 999;
+  width: 250px;
+  transition: transform 0.4s ease-out;
+  /* Increase the translation if using a shadow */
+  transform: translateX(-110%);
+  height: 100vh;
+}
+
+#mobileNav ul {
+  background-color: #fff;
   list-style-type: none;
   /* ul has default margins, top and bottom */
   margin: 0;
   /* ul has a default padding */
   padding-left: 0;
-  overflow-y: auto;
-  z-index: 999;
-  width: 300px;
-  transition: transform 0.4s ease-out;
-  /* Increase the translation if using a shadow */
-  transform: translateX(-110%);
-  height: 100vh;
 }
 
 #mobileNav a {

@@ -11,23 +11,38 @@
       <div class="top-bar-left">
         <ul class="dropdown menu hide-for-small-only" data-dropdown-menu>
           <li class="menu-text">RemindOthers</li>
-          <li><a href="#">Free Trial</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="https://remindothers.net7.be">Go to App.</a></li>
+          {{> menu}}
         </ul>
       </div>
       
-      <div class="top-bar-right text-right show-for-small-only">
-        <button id="menuBtn">
+      <div class="top-bar-right">
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Blank_globe.svg" height="20" width="20" />
+          <select>
+            <option>FR</option>
+            <option>EN</option>
+          </select>
+        </div>
+        <button id="menuBtn" class="show-for-small-only">
           <img width="40px" src="../../static/menu.png" alt="Mobile menu icon">
         </button>
       </div>
+
+{{!--       <div class="top-bar-right text-right show-for-small-only">
+        <button id="menuBtn">
+          <img width="40px" src="../../static/menu.png" alt="Mobile menu icon">
+        </button>
+      </div> --}}
       
-      <ul id="mobileNav" class="menu-shadow">
-        <li><a href="#">Free Trial</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="https://remindothers.net7.be">Go to App.</a></li>
-      </ul>
+      <div id="mobileNav" class="menu-shadow">
+        <div class="text-center">
+          <img src="/manifest/icon-72x72.png" alt="Net7 Logo">
+        </div>
+        <hr>
+        <ul>
+          {{> menu}}
+        </ul>
+      </div>
       <div id="mobileNavOverlay"></div>
     </div>   
   </header>
