@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="{{{lang}}}" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entry point test</title>
+  {{{altHreflang lang htmlWebpackPlugin.options.page}}}
+  <title>{{#if htmlWebpackPlugin.options.pageTitle}}{{{translate lang htmlWebpackPlugin.options.pageTitle}}} | {{/if}}{{{translate lang 'siteTitle'}}}</title>
+  {{{scriptFromChunk htmlWebpackPlugin.options.headScript}}}
+  {{{injectCSS 'app'}}}
 </head>
 <body>
   <header>
@@ -11,17 +14,17 @@
       <div class="top-bar-left">
         <ul class="dropdown menu hide-for-small-only" data-dropdown-menu>
           <li class="menu-text">RemindOthers</li>
-          {{> menu}}
+          {{> menu lang=lang}}
         </ul>
       </div>
       
       <div class="top-bar-right menu-extra">
         <div class="lang-selector">
           <img src="../../static/globe.svg" height="36" width="36" />
-          <select>
-            <option>EN</option>
-            <option>FR</option>
-            <option>NL</option>
+          <select id="langSelector">
+            <option data-lang="en" {{{setAttrGeneric lang 'en' 'selected'}}}>EN</option>
+            <option data-lang="fr" {{{setAttrGeneric lang 'fr' 'selected'}}}>FR</option>
+            <option data-lang="nl" {{{setAttrGeneric lang 'nl' 'selected'}}}>NL</option>
           </select>
         </div>
         <button id="menuBtn" class="show-for-small-only">
@@ -43,7 +46,7 @@
         </div>
         <hr>
         <ul>
-          {{> menu}}
+          {{> menu lang=lang}}
         </ul>
       </div>
       <div id="mobileNavOverlay"></div>

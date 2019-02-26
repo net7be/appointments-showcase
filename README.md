@@ -86,7 +86,9 @@ It should be linked from the actual RemindOthers app. login screen. We could jus
 
 # TODO
 - [ ] Add Babel.
+- [ ] Add OpenGraph.
 - [ ] Font size is weird on mobile when compared to titles.
 - [ ] There are different images per language for the learn more screenshot.
 - [ ] Minify the images in static.
 - [ ] Check that all links are correct as we have the "request free trial" one at multiple places (for instance).
+- [ ] Mention the media files from webroot/manifest in meta tags and/or the manifest file.

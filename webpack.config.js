@@ -3,18 +3,15 @@ const HtmlPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require('webpack');
 const contentBase = path.join(__dirname, 'dist');
 
-// Generates config objects for HtmlWebpackPlugin instances:
-const minifyOptions = {
-  removeComments: true,
-  collapseWhitespace: true,
-  removeAttributeQuotes: false
-}
+const { conf, hwpConf, minifyOptions } = require('./src/config');
 
 const config = {
   entry: {
-    app: './src/app.js'
+    app: './src/app.js',
+    languageDetection: './src/language-detection.js'
   },
   output: {
     path: contentBase,
@@ -109,7 +106,10 @@ const config = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       { from: 'webroot', to: '' }
-    ])
+    ]),
+    new webpack.DefinePlugin({
+      DEFAULT_LANG: "'" + conf.defaultLanguage + "'"
+    })
   ],
   devServer: {
     contentBase: contentBase,
@@ -133,9 +133,30 @@ module.exports = (env, argv) => {
     new HtmlPlugin({
       template: './src/pages/index.hbs',
       filename: 'index.html',
-      minify: (argv.mode === 'production') ? minifyOptions : false
+      minify: (argv.mode === 'production') ? minifyOptions : false,
+      /* I have to use this whole mess because HtmlWebpackPlugin
+       either injects everything in head, or everything in body.
+       And I wanted one of each.
+       So we're disabling injection and using an ugly helper in the template.
+      */
+      inject: false,
+      chunks: ['languageDetection', 'app'],
+      headScript: 'languageDetection',
+      bodyScript: 'app',
+      lang: conf.defaultLanguage,
+      page: 'index',
+      absoluteUrl: conf.absoluteUrl
     })
   );
+
+  // Add the different pages.
+  // I could scan the "pages" directory.
+  conf.languages.map(l => {
+    config.plugins.push(
+      new HtmlPlugin(hwpConf(l, 'index', undefined, argv.mode)),
+      new HtmlPlugin(hwpConf(l, 'free-trial', 'freeTrialTitle', argv.mode)),
+    );
+  });
   
   return config;
 };

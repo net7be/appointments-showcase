@@ -56,6 +56,10 @@
 @import 'net7.scss';
 @import 'mobilenav.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .menu-extra {
   display: flex;
   align-items: center;
