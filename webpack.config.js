@@ -156,6 +156,7 @@ module.exports = (env, argv) => {
     config.plugins.push(
       new HtmlPlugin(hwpConf(l, 'index', 'indexTitle', argv.mode)),
       new HtmlPlugin(hwpConf(l, 'free-trial', 'freeTrialTitle', argv.mode)),
+      new HtmlPlugin(hwpConf(l, 'contact', 'contactUsTitle', argv.mode))
     );
   });
   

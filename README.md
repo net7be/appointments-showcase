@@ -1,6 +1,21 @@
 # RemindOthers - Showcase website
 Multilingual static site generator using Webpack and Handlebars templates.
 
+## Running the site
+With NodeJS installed, to test the project you can use:
+```
+npm install
+npm start
+```
+Which will start the Webpack dev server at http://localhost:8081.
+
+Do note that adding new pages to the website requires a full restart of the Webpack dev server.
+
+To build for production use:
+```
+npm run prod
+```
+
 ## Foundation
 The official npm package can be installed as such:
 ```
@@ -93,3 +108,4 @@ It should be linked from the actual RemindOthers app. login screen. We could jus
 - [ ] Check that all links are correct as we have the "request free trial" one at multiple places (for instance).
 - [ ] Mention the media files from webroot/manifest in meta tags and/or the manifest file.
 - [ ] On the langSelector HTML select in header, the data-lang attribute is redundant with value. Requires changes in app.js.
+- [ ] The main large-screen toolbar should probably display the logo somewhere, hide it for mobile.
