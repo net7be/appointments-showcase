@@ -92,3 +92,4 @@ It should be linked from the actual RemindOthers app. login screen. We could jus
 - [ ] Minify the images in static.
 - [ ] Check that all links are correct as we have the "request free trial" one at multiple places (for instance).
 - [ ] Mention the media files from webroot/manifest in meta tags and/or the manifest file.
+- [ ] On the langSelector HTML select in header, the data-lang attribute is redundant with value. Requires changes in app.js.

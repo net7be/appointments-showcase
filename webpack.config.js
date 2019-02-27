@@ -145,7 +145,8 @@ module.exports = (env, argv) => {
       bodyScript: 'app',
       lang: conf.defaultLanguage,
       page: 'index',
-      absoluteUrl: conf.absoluteUrl
+      absoluteUrl: conf.absoluteUrl,
+      pageTitle: 'indexTitle'
     })
   );
 
@@ -153,7 +154,7 @@ module.exports = (env, argv) => {
   // I could scan the "pages" directory.
   conf.languages.map(l => {
     config.plugins.push(
-      new HtmlPlugin(hwpConf(l, 'index', undefined, argv.mode)),
+      new HtmlPlugin(hwpConf(l, 'index', 'indexTitle', argv.mode)),
       new HtmlPlugin(hwpConf(l, 'free-trial', 'freeTrialTitle', argv.mode)),
     );
   });

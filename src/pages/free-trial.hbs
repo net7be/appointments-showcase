@@ -1,21 +1,45 @@
 {{> header lang=htmlWebpackPlugin.options.lang}}
 
-<main>
-  <div class="row">
+<main role="main">
+  <div class="row align-center main-section">
     <div class="large-6 medium-8 small-12 columns">
       <h2>Request a Free Trial</h2>
       <p>
-        Add reminders to your appointments with configurable type and delay for sending it, all with customizable templates.
+        You can request a test account that is only limited in that it isn't allowed to send SMS reminders.
       </p>
       <p>
-        Manage your address book, keep the history of appointments for your contacts.
+        The other app. features, including email reminders, are all available for you to use.
       </p>
-      <p>See below for more features currently available in app.</p>
-      <p>You may <a href="#">request a free trial today</a>.</p>
-    </div>
-  </div>
+      <p>
+        Feel free to <a href="/{{htmlWebpackPlugin.options.lang}}/contact.html">contact us</a> if you need more information.
+      </p>
 
-  <hr>
+      <hr>
+
+      <form id="trialForm">
+        <label>Your name:
+          <input type="text" name="nameInput" id="nameInput" placeholder="Your name">
+        </label>
+        <label>Your email:
+          <input type="text" name="emailInput" id="emailInput" placeholder="Your email">
+        </label>
+        <label>Language:
+          <select name="trialLangSelect" id="trialLangSelect">
+            <option value="en">{{{translate htmlWebpackPlugin.options.lang 'english'}}}</option>
+            <option value="fr">{{{translate htmlWebpackPlugin.options.lang 'french'}}}</option>
+            <option value="nl">{{{translate htmlWebpackPlugin.options.lang 'dutch'}}}</option>
+          </select>
+        </label>
+        <div class="text-right">
+          <button class="button" type="submit" name="submButton" id="submButton">Send Request</button>
+        </div>
+      </form>
+
+      <hr>
+
+    </div>
+
+  </div>
   
 </main>
 

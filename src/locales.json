@@ -1,14 +1,26 @@
 {
   "en": {
     "siteTitle": "RemindOthers",
-    "freeTrialTitle": "Request Free Trial"
+    "freeTrialTitle": "Request Free Trial",
+    "indexTitle": "Showcase",
+    "english": "English",
+    "french": "French",
+    "dutch": "Dutch"
   },
   "fr": {
     "siteTitle": "RemindOthers",
-    "freeTrialTitle": "Demande d'essai gratuit"
+    "freeTrialTitle": "Demande d'essai gratuit",
+    "indexTitle": "Informations",
+    "english": "Anglais",
+    "french": "Français",
+    "dutch": "Néerlandais"
   },
   "nl": {
     "siteTitle": "RemindOthers",
-    "freeTrialTitle": "Gratis Proefperiode"
+    "freeTrialTitle": "Gratis Proefperiode",
+    "indexTitle": "Informatie",
+    "english": "Engels",
+    "french": "Frans",
+    "dutch": "Nederlands"
   }
 }
