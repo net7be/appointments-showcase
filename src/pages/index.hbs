@@ -5,26 +5,22 @@
     <div class="callout large large-6 medium-12 small-12 columns">
       <div class="text-center">
         <h1>Net7 RemindOthers</h1>
-        <p class="lead">Automatic SMS &amp; Email reminders sent to your customers for future appointments.</p>
-        <a href="#lmore" class="button large">Learn More</a>
-        <a href="/{{htmlWebpackPlugin.options.lang}}/free-trial.html" class="button large hollow">Request Free Trial</a>
+        <p class="lead">{{translate htmlWebpackPlugin.options.lang 'lead'}}</p>
+        <a href="#lmore" class="button large">{{translate htmlWebpackPlugin.options.lang 'learnMore'}}</a>
+        <a href="/{{htmlWebpackPlugin.options.lang}}/free-trial.html" class="button large hollow">{{translate htmlWebpackPlugin.options.lang 'freeTrialTitle'}}</a>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="medium-6 small-12 columns medium-pull-6">
-      <h2 id="lmore">Fully configurable reminders</h2>
-      <p>
-        Add reminders to your appointments with configurable type and delay for sending it, all with customizable templates.
-      </p>
-      <p>
-        Manage your address book, keep the history of appointments for your contacts.
-      </p>
-      <p>See below for more features currently available in app.</p>
-      <p>You may <a href="/{{htmlWebpackPlugin.options.lang}}/free-trial.html">request a free trial today</a>.</p>
+      <h2 id="lmore">{{translate htmlWebpackPlugin.options.lang 'fullyConfReminders'}}</h2>
+      <p>{{translate htmlWebpackPlugin.options.lang 'desc1'}}</p>
+      <p>{{translate htmlWebpackPlugin.options.lang 'desc2'}}</p>
+      <p>{{translate htmlWebpackPlugin.options.lang 'desc3'}}</p>
+      <p>{{translate htmlWebpackPlugin.options.lang 'youMay'}} <a href="/{{htmlWebpackPlugin.options.lang}}/free-trial.html">{{translate htmlWebpackPlugin.options.lang 'requestFree'}}</a>.</p>
     </div>
     <div class="medium-6 small-12 columns medium-push-6">
-      <img class="thumbnail" src="../../static/rothers_app_en.png">
+      <img class="thumbnail" src="../../static/rothers_app_{{htmlWebpackPlugin.options.lang}}.png">
     </div>
   </div>
   <hr />

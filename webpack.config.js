@@ -35,6 +35,19 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.hbs$/,
+        use: [
+          {
+            loader: 'handlebars-loader',
+            options: {
+              helperDirs: path.join(__dirname, 'src/helpers'),
+              partialDirs: path.join(__dirname, 'src/partials'),
+              //inlineRequires: '/static/'
+            }
+          }
+        ]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
@@ -94,15 +107,6 @@ const config = {
             outputPath: 'static/'
           }
         }]
-      },
-      {
-        test: /\.hbs$/,
-        loader: 'handlebars-loader',
-        options: {
-          helperDirs: path.join(__dirname, 'src/helpers'),
-          partialDirs: path.join(__dirname, 'src/partials'),
-          inlineRequires: '/static/'
-        }
       }
     ]
   },
@@ -113,6 +117,9 @@ const config = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       { from: 'webroot', to: '' }
+    ]),
+    new CopyWebpackPlugin([
+      { from: 'static', to: 'static' }
     ]),
     new webpack.DefinePlugin({
       DEFAULT_LANG: "'" + conf.defaultLanguage + "'"

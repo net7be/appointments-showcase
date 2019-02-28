@@ -10,7 +10,15 @@
     "messageSent": "Your request has been sent. We will process it as soon as possible and send you your test credentials by email.",
     "serverError": "Service temporarily unavailable, please try again later or shoot us an email to support@net7.be.",
     "invalidEmail": "Invalid email address.",
-    "missingField": "Missing mandatory field."
+    "missingField": "Missing mandatory field.",
+    "lead": "Automatic SMS &amp; Email reminders sent to your customers for future appointments.",
+    "learnMore": "Learn more",
+    "fullyConfReminders": "Fully configurable reminders",
+    "desc1": "Add reminders to your appointments with configurable type and delay for sending it, all with customizable templates.",
+    "desc2": "Manage your address book, keep the history of appointments for your contacts.",
+    "desc3": "See below for more features currently available in app.",
+    "youMay": "You may",
+    "requestFree": "request a free trial today"
   },
   "fr": {
     "siteTitle": "RemindOthers",
@@ -23,7 +31,15 @@
     "messageSent": "Votre demande a été envoyée. Nous vous enverrons vos accès par email une fois votre demande validée en interne.",
     "serverError": "Service temporairement indisponible. Veuillez réessayer plus tard ou nous envoyer directement un email à support@net7.be",
     "invalidEmail": "Adresse email invalide.",
-    "missingField": "Veuillez remplir tous les champs du formulaire."
+    "missingField": "Veuillez remplir tous les champs du formulaire.",
+    "lead": "Envoi automatique de rappels par SMS et/ou email à vos clients pour vos rendez-vous futurs.",
+    "learnMore": "En savoir plus",
+    "fullyConfReminders": "Rappels de RDV personnalisés",
+    "desc1": "Envoyez des rappels pour vos rendez-vous par SMS et/ou email et choisissez à quel moment les rappels sont envoyés, le tout avec des modèles personnalisables.",
+    "desc2": "Gérez votre carnet d'adresse, conserver l'historique de vos rendez-vous passés.",
+    "desc3": "Voir ci-dessous pour un aperçu de différentes fonctionnalités de l'application.",
+    "youMay": "Vous pouvez",
+    "requestFree": "demander un essai gratuit"
   },
   "nl": {
     "siteTitle": "RemindOthers",
@@ -36,6 +52,14 @@
     "messageSent": "Uw verzoek is verstuurd. We gaan het verwerken en zo snell mogelijk uw testgegevens bij email toesturen.",
     "serverError": "Service momenteel niet beschikbaar. gelieve later opnieuw te proberen of probeert het email adres support@net7.be.",
     "invalidEmail": "Ongeldig emailadres.",
-    "missingField": "Alle formulier velden zijn verplicht."
+    "missingField": "Alle formulier velden zijn verplicht.",
+    "lead": "Automatische SMS en email herinneringen verzonden naar uw klanten voor professionele afspraken.",
+    "learnMore": "Lees verder",
+    "fullyConfReminders": "volledig configureerbare herinneringen",
+    "desc1": "koppel herinneringen aan uw afspraken met configureerbaar type en vertraging voor het verzenden, allemaal met aanpasbare sjablonen.",
+    "desc2": "Beheer uw adresboek, krijg een volledig beeld van eerdere afspraken voor uw contacten.",
+    "desc3": "Zie hieronder voor meer functies die beschikbaar in de app. zijn.",
+    "youMay": "U kunt",
+    "requestFree": "nu voor een gratis proefperiode vragen"
   }
 }
