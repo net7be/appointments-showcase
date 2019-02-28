@@ -6,7 +6,11 @@
     "contactUsTitle": "Contact us",
     "english": "English",
     "french": "French",
-    "dutch": "Dutch"
+    "dutch": "Dutch",
+    "messageSent": "Your request has been sent. We will process it as soon as possible and send you your test credentials by email.",
+    "serverError": "Service temporarily unavailable, please try again later or shoot us an email to support@net7.be.",
+    "invalidEmail": "Invalid email address.",
+    "missingField": "Missing mandatory field."
   },
   "fr": {
     "siteTitle": "RemindOthers",
@@ -15,7 +19,11 @@
     "contactUsTitle": "Nous contacter",
     "english": "Anglais",
     "french": "Français",
-    "dutch": "Néerlandais"
+    "dutch": "Néerlandais",
+    "messageSent": "Votre demande a été envoyée. Nous vous enverrons vos accès par email une fois votre demande validée en interne.",
+    "serverError": "Service temporairement indisponible. Veuillez réessayer plus tard ou nous envoyer directement un email à support@net7.be",
+    "invalidEmail": "Adresse email invalide.",
+    "missingField": "Veuillez remplir tous les champs du formulaire."
   },
   "nl": {
     "siteTitle": "RemindOthers",
@@ -24,6 +32,10 @@
     "contactUsTitle": "Neem contact op met ons",
     "english": "Engels",
     "french": "Frans",
-    "dutch": "Nederlands"
+    "dutch": "Nederlands",
+    "messageSent": "Uw verzoek is verstuurd. We gaan het verwerken en zo snell mogelijk uw testgegevens bij email toesturen.",
+    "serverError": "Service momenteel niet beschikbaar. gelieve later opnieuw te proberen of probeert het email adres support@net7.be.",
+    "invalidEmail": "Ongeldig emailadres.",
+    "missingField": "Alle formulier velden zijn verplicht."
   }
 }

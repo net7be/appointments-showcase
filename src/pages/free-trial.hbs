@@ -13,25 +13,28 @@
       <p>
         Feel free to <a href="/{{htmlWebpackPlugin.options.lang}}/contact.html">contact us</a> if you need more information.
       </p>
+      <p>Please fill out all the fields below.</p>
 
       <hr>
 
+      <div id="message" class="callout" style="display: none;"></div>
+
       <form id="trialForm">
         <label>Your name:
-          <input type="text" name="nameInput" id="nameInput" placeholder="Your name">
+          <input required type="text" name="nameInput" id="nameInput" placeholder="Your name">
         </label>
         <label>Your email:
-          <input type="text" name="emailInput" id="emailInput" placeholder="Your email">
+          <input required type="text" name="emailInput" id="emailInput" placeholder="Your email">
         </label>
         <label>Language:
           <select name="trialLangSelect" id="trialLangSelect">
-            <option value="en">{{{translate htmlWebpackPlugin.options.lang 'english'}}}</option>
-            <option value="fr">{{{translate htmlWebpackPlugin.options.lang 'french'}}}</option>
-            <option value="nl">{{{translate htmlWebpackPlugin.options.lang 'dutch'}}}</option>
+            <option value="en" {{{setAttrGeneric htmlWebpackPlugin.options.lang 'en' 'selected'}}}>{{{translate htmlWebpackPlugin.options.lang 'english'}}}</option>
+            <option value="fr" {{{setAttrGeneric htmlWebpackPlugin.options.lang 'fr' 'selected'}}}>{{{translate htmlWebpackPlugin.options.lang 'french'}}}</option>
+            <option value="nl" {{{setAttrGeneric htmlWebpackPlugin.options.lang 'nl' 'selected'}}}>{{{translate htmlWebpackPlugin.options.lang 'dutch'}}}</option>
           </select>
         </label>
         <div class="text-right">
-          <button class="button" type="submit" name="submButton" id="submButton">Send Request</button>
+          <button class="button large" type="submit" name="submButton" id="submButton">Send Request</button>
         </div>
       </form>
 
