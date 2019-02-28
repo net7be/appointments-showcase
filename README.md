@@ -100,7 +100,7 @@ We need to create a _settings.scss file to import **before** the foundation one.
 It should be linked from the actual RemindOthers app. login screen. We could just host it on the same domain using an alias like **/about**.
 
 # TODO
-- [ ] Add Babel.
+- [x] Add Babel.
 - [ ] Add OpenGraph.
 - [ ] Font size is weird on mobile when compared to titles.
 - [ ] There are different images per language for the learn more screenshot.
