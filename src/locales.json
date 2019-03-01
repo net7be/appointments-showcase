@@ -18,7 +18,9 @@
     "desc2": "Manage your address book, keep the history of appointments for your contacts.",
     "desc3": "See below for more features currently available in app.",
     "youMay": "You may",
-    "requestFree": "request a free trial today"
+    "requestFree": "request a free trial today",
+    "campaigns": "Campaigns",
+    "campDesc": "Send campaigns by email or SMS based on the last appointments for you contacts with configurable templates and criteria."
   },
   "fr": {
     "siteTitle": "RemindOthers",
@@ -39,7 +41,9 @@
     "desc2": "Gérez votre carnet d'adresse, conserver l'historique de vos rendez-vous passés.",
     "desc3": "Voir ci-dessous pour un aperçu de différentes fonctionnalités de l'application.",
     "youMay": "Vous pouvez",
-    "requestFree": "demander un essai gratuit"
+    "requestFree": "demander un essai gratuit",
+    "campaigns": "Campagnes",
+    "campDesc": "Envoyez des campagnes par email ou SMS par rapport aux dates des derniers rendez-vous pris par vos contacts avec des modèles et critères personnalisables."
   },
   "nl": {
     "siteTitle": "RemindOthers",
@@ -60,6 +64,8 @@
     "desc2": "Beheer uw adresboek, krijg een volledig beeld van eerdere afspraken voor uw contacten.",
     "desc3": "Zie hieronder voor meer functies die beschikbaar in de app. zijn.",
     "youMay": "U kunt",
-    "requestFree": "nu voor een gratis proefperiode vragen"
+    "requestFree": "nu voor een gratis proefperiode vragen",
+    "campaigns": "Campagnes",
+    "campDesc": "Stuur email of SMS campagnes op basis van de laatste afspraken voor uw contacten met configureerbare sjablonen en criteria."
   }
 }
