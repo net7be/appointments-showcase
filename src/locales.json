@@ -20,7 +20,12 @@
     "youMay": "You may",
     "requestFree": "request a free trial today",
     "campaigns": "Campaigns",
-    "campDesc": "Send campaigns by email or SMS based on the last appointments for you contacts with configurable templates and criteria."
+    "campDesc": "Send campaigns by email or SMS based on the last appointments for you contacts with configurable templates and criteria.",
+    "col2title": "Open to <b>your</b> feature requests",
+    "col2desc": "The project is still young, we're open to any feature request you might have and would strive to implement them.",
+    "immediateReminders": "Immediate reminders",
+    "col3desc": "Send a quick email when registering an appointment with the time and date details for automatic integration into the personnal calendars of your customers.",
+    "trialRequestDesc": "You can request a test account that is only limited in that it isn't allowed to send SMS reminders."
   },
   "fr": {
     "siteTitle": "RemindOthers",
@@ -43,7 +48,12 @@
     "youMay": "Vous pouvez",
     "requestFree": "demander un essai gratuit",
     "campaigns": "Campagnes",
-    "campDesc": "Envoyez des campagnes par email ou SMS par rapport aux dates des derniers rendez-vous pris par vos contacts avec des modèles et critères personnalisables."
+    "campDesc": "Envoyez des campagnes par email ou SMS par rapport aux dates des derniers rendez-vous pris par vos contacts avec des modèles et critères personnalisables.",
+    "col2title": "Ouvert à vos demandes de fonctionnalités",
+    "col2desc": "Nous sommes ouverts à toute suggestion ou demande de fonctionnalité dans le but d'améliorer le produit.",
+    "immediateReminders": "Rappels immédiats",
+    "col3desc": "Envoyez un email immédiatement après avoir enregistré un nouveau rendez-vous pour informer votre client de la date et l'heure permettant l'intégration automatique du rendez-vous dans leur calendrier personnel.",
+    "trialRequestDesc": "Vous pouvez demander un compte d'essai en utilisant le formulaire ci-dessous. Les comptes d'essais ont la limitation de n epas pouvoir envoyer de SMS."
   },
   "nl": {
     "siteTitle": "RemindOthers",
@@ -66,6 +76,11 @@
     "youMay": "U kunt",
     "requestFree": "nu voor een gratis proefperiode vragen",
     "campaigns": "Campagnes",
-    "campDesc": "Stuur email of SMS campagnes op basis van de laatste afspraken voor uw contacten met configureerbare sjablonen en criteria."
+    "campDesc": "Stuur email of SMS campagnes op basis van de laatste afspraken voor uw contacten met configureerbare sjablonen en criteria.",
+    "col2title": "open beleid voor functieverzoeken",
+    "col2desc": "Het project is nog jong, we staan open voor functieverzoeken om het product te verbeteren.",
+    "immediateReminders": "Onmiddellijke herinneringen",
+    "col3desc": "Stuur een onmiddelijk email na registreren van een nieuwe afspraak om uw klant te informeren over de datum en tijd met mogelijk integratie op zijn persoonlijke kalenders.",
+    "trialRequestDesc": "Vraag vandaag voor een proefaccount. Proefaccounts mogen geen SMS sturen."
   }
 }
