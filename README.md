@@ -100,12 +100,14 @@ We need to create a _settings.scss file to import **before** the foundation one.
 It should be linked from the actual RemindOthers app. login screen. We could just host it on the same domain using an alias like **/about**.
 
 # TODO
+- [ ] Make a logo for the app.
+- [ ] Favicons should be the round Net7 logo (or the new RemindOthers logo), not the multiline one.
 - [x] Add Babel.
-- [ ] Add OpenGraph.
+- [x] The main large-screen toolbar should probably display the logo somewhere, hide it for mobile.
+- [x] Add OpenGraph.
 - [ ] Font size is weird on mobile when compared to titles.
-- [ ] There are different images per language for the learn more screenshot.
-- [ ] Minify the images in static.
-- [ ] Check that all links are correct as we have the "request free trial" one at multiple places (for instance).
-- [ ] Mention the media files from webroot/manifest in meta tags and/or the manifest file.
+- [x] There are different images per language for the learn more screenshot.
+- [x] Minify the images in static.
+- [x] Check that all links are correct as we have the "request free trial" one at multiple places (for instance).
+- [x] Mention the media files from webroot/manifest in meta tags and/or the manifest file.
 - [ ] On the langSelector HTML select in header, the data-lang attribute is redundant with value. Requires changes in app.js.
-- [ ] The main large-screen toolbar should probably display the logo somewhere, hide it for mobile.
