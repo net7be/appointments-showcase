@@ -5,26 +5,24 @@
     <div class="large-6 medium-8 small-12 columns">
       <h2>{{translate htmlWebpackPlugin.options.lang 'freeTrialTitle'}}</h2>
       <p>{{translate htmlWebpackPlugin.options.lang 'trialRequestDesc'}}</p>
+      <p>{{translate htmlWebpackPlugin.options.lang 'tReqDesc2'}}</p>
       <p>
-        The other app. features, including email reminders, are all available for you to use.
+        {{translate htmlWebpackPlugin.options.lang 'feelFreeTo'}} <a href="/{{htmlWebpackPlugin.options.lang}}/contact.html">{{translate htmlWebpackPlugin.options.lang 'contactUs'}}</a> {{translate htmlWebpackPlugin.options.lang 'forMoreInfo'}}
       </p>
-      <p>
-        Feel free to <a href="/{{htmlWebpackPlugin.options.lang}}/contact.html">contact us</a> if you need more information.
-      </p>
-      <p>Please fill out all the fields below.</p>
+      <p>{{translate htmlWebpackPlugin.options.lang 'fillOutFields'}}</p>
 
       <hr>
 
       <div id="message" class="callout" style="display: none;"></div>
 
       <form id="trialForm">
-        <label>Your name:
+        <label>{{translate htmlWebpackPlugin.options.lang 'yourName'}}:
           <input required type="text" name="nameInput" id="nameInput" placeholder="Your name">
         </label>
-        <label>Your email:
+        <label>{{translate htmlWebpackPlugin.options.lang 'yourEmail'}}:
           <input required type="text" name="emailInput" id="emailInput" placeholder="Your email">
         </label>
-        <label>Language:
+        <label>{{translate htmlWebpackPlugin.options.lang 'language'}}:
           <select name="trialLangSelect" id="trialLangSelect">
             <option value="en" {{{setAttrGeneric htmlWebpackPlugin.options.lang 'en' 'selected'}}}>{{{translate htmlWebpackPlugin.options.lang 'english'}}}</option>
             <option value="fr" {{{setAttrGeneric htmlWebpackPlugin.options.lang 'fr' 'selected'}}}>{{{translate htmlWebpackPlugin.options.lang 'french'}}}</option>
@@ -32,7 +30,7 @@
           </select>
         </label>
         <div class="text-right">
-          <button class="button large" type="submit" name="submButton" id="submButton">Send Request</button>
+          <button class="button large" type="submit" name="submButton" id="submButton">{{translate htmlWebpackPlugin.options.lang 'sendRequest'}}</button>
         </div>
       </form>
 
