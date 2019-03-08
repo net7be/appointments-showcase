@@ -15,7 +15,6 @@ const config = {
   },
   output: {
     path: contentBase,
-    publicPath: '/',
     filename: '[name][hash:5].js'
   },
   optimization: {
@@ -122,13 +121,14 @@ const config = {
       { from: 'static', to: 'static' }
     ]),
     new webpack.DefinePlugin({
-      DEFAULT_LANG: "'" + conf.defaultLanguage + "'"
+      DEFAULT_LANG: "'" + conf.defaultLanguage + "'",
+      ABSOLUTE_URL: "'" + conf.absoluteUrl + "'"
     })
   ],
   devServer: {
     contentBase: contentBase,
     //historyApiFallback: true,
-    publicPath: '/',
+    //publicPath: '/about/',
     port: 8081
   }
 };
@@ -140,6 +140,9 @@ module.exports = (env, argv) => {
 
   if (argv.mode === 'development') {
     config.devtool = 'source-map';
+    config.output.publicPath = '/';
+  } else {
+    config.output.publicPath = '/about/';
   }
 
   // Add the main index page here:

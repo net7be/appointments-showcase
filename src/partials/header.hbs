@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{htmlWebpackPlugin.options.absoluteUrl}}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{htmlWebpackPlugin.options.absoluteUrl}}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{htmlWebpackPlugin.options.absoluteUrl}}/favicon-16x16.png">
+  <link rel="manifest" href="{{htmlWebpackPlugin.options.absoluteUrl}}/site.webmanifest">
+  <link rel="mask-icon" href="{{htmlWebpackPlugin.options.absoluteUrl}}/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#172983">
   <meta name="description" content="{{{translate lang 'lead'}}}">
@@ -30,14 +30,14 @@
       <div class="top-bar-left">
         <ul class="dropdown menu hide-for-small-only" data-dropdown-menu>
           {{!-- <li class="menu-text">RemindOthers</li> --}}
-          <li><img src="/manifest/icon-72x72.png" width="48" height="48" alt="Net7 Logo"></li>
-          {{> menu lang=lang}}
+          <li><img src="../static/manifest/icon-72x72.png" width="48" height="48" alt="Net7 Logo"></li>
+          {{> menu baseUrl=htmlWebpackPlugin.options.absoluteUrl lang=lang}}
         </ul>
       </div>
       
       <div class="top-bar-right menu-extra">
         <div class="lang-selector">
-          <img src="../../static/globe.svg" height="36" width="36" />
+          <img src="../static/globe.svg" height="36" width="36" />
           <select id="langSelector">
             <option value="en" data-lang="en" {{{setAttrGeneric lang 'en' 'selected'}}}>EN</option>
             <option value="fr" data-lang="fr" {{{setAttrGeneric lang 'fr' 'selected'}}}>FR</option>
@@ -45,7 +45,7 @@
           </select>
         </div>
         <button id="menuBtn" class="show-for-small-only">
-          <img width="40" src="../../static/menu.png" alt="Mobile menu icon">
+          <img width="40" src="../static/menu.png" alt="Mobile menu icon">
         </button>
       </div>
 
@@ -59,11 +59,11 @@
       
       <div id="mobileNav" class="menu-shadow">
         <div class="text-center">
-          <img src="/manifest/icon-72x72.png" alt="Net7 Logo">
+          <img src="../manifest/icon-72x72.png" alt="Net7 Logo">
         </div>
         <hr>
         <ul>
-          {{> menu lang=lang}}
+          {{> menu baseUrl=htmlWebpackPlugin.options.absoluteUrl lang=lang}}
         </ul>
       </div>
       <div id="mobileNavOverlay"></div>

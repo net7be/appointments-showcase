@@ -11,20 +11,21 @@ const langSelector = document.getElementById('langSelector');
 // We need the current language to get the right translations
 // from the "locales" object:
 const currentLang = document.documentElement.lang || DEFAULT_LANG;
+const absoluteUrl = ABSOLUTE_URL || '/';
 
 // Register the language picker.
 // This looks more convoluted than it should be.
 const reg = /\/\w{2}\/([a-zA-Z0-9#\.-]+)$/;
 langSelector.addEventListener('change', (e) => {
   const nlang = e.currentTarget.options[e.currentTarget.selectedIndex].getAttribute('data-lang');
-  var matches = reg.exec(window.location.href);
+  const matches = reg.exec(window.location.href);
   if (matches) {
-    window.location.href = window.location.protocol + '//' +
-      window.location.host + '/' + nlang + 
-        '/' + matches[1];
+    /*window.location.href = window.location.protocol + '//' +
+      window.location.host + window.location.pathname + nlang + 
+        '/' + matches[1];*/
+    window.localtion.href = absoluteUrl + '/' + nlang + '/' + matches[1];
   } else {
-    window.location.href = window.location.protocol + '//' + 
-    window.location.host + '/' + nlang + '/'; 
+    window.location.href = absoluteUrl + '/' + nlang + '/';
   }
 });
 

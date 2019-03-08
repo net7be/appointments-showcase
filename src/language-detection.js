@@ -1,6 +1,11 @@
 const userLang = navigator.language || navigator.userLanguage;
-if (userLang.indexOf('en') >= 0) {
-  // Redirect. Using location.replace won't put something
-  // in the browser history. We might want to, though.
-  window.location.replace('/en');
+let lang;
+if (userLang.indexOf('fr') >= 0) {
+  //window.location.replace('/en');
+  lang = 'fr';
+} else if (userLang.indexOf('ln') >= 0) {
+  lang = 'nl';
+} else {
+  lang = 'en';
 }
+window.location.replace(window.location.protocol + '//' + window.location.host + window.location.pathname + lang + '/');

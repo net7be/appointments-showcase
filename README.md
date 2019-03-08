@@ -16,6 +16,19 @@ To build for production use:
 npm run prod
 ```
 
+## Deployment
+I'm using an Alias config in Apache from the actual app. Virtual Host:
+```
+Alias /about    /var/vhosts/remindothers.net7.be/about
+<Directory /var/vhosts/remindothers.net7.be/about>
+    FallbackResource disabled
+    Require all granted
+</Directory>
+```
+Which requires a lot of consideration of "publicPath" in Webpack because we're not at the root so we can't use direct "/" URLs.
+
+If you don't want to /about thing you have to look up "publicPath" in webpack.config.js and use "/" instead of "/about/".
+
 ## Foundation
 The official npm package can be installed as such:
 ```
@@ -100,6 +113,7 @@ We need to create a _settings.scss file to import **before** the foundation one.
 It should be linked from the actual RemindOthers app. login screen. We could just host it on the same domain using an alias like **/about**.
 
 # TODO
+- [ ] Run at or not at website root should be switchable. I currently use "/about/" in production but that should be in config.js.
 - [ ] Make a logo for the app.
 - [ ] Favicons should be the round Net7 logo (or the new RemindOthers logo), not the multiline one.
 - [x] Add Babel.
