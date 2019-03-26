@@ -23,7 +23,7 @@ langSelector.addEventListener('change', (e) => {
     /*window.location.href = window.location.protocol + '//' +
       window.location.host + window.location.pathname + nlang + 
         '/' + matches[1];*/
-    window.localtion.href = absoluteUrl + '/' + nlang + '/' + matches[1];
+    window.location.href = absoluteUrl + '/' + nlang + '/' + matches[1];
   } else {
     window.location.href = absoluteUrl + '/' + nlang + '/';
   }
