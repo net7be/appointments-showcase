@@ -114,7 +114,9 @@ It should be linked from the actual RemindOthers app. login screen. We could jus
 
 # TODO
 - [ ] Run at or not at website root should be switchable. I currently use "/about/" in production but that should be in config.js.
+- [ ] Most of the functions in MobileNav should be put in the prototype. More for psychosis-induced optimization than real need since we only ever make one MobileNav object in the app.
 - [ ] Make a logo for the app.
+- [ ] Mobile nav touch threshold should also depend on the actual screen width, for now it seems to only depend on the navbar width multiplied by something, and that me be too big for some weird super small mobile phone screen.
 - [ ] Favicons should be the round Net7 logo (or the new RemindOthers logo), not the multiline one.
 - [x] Add Babel.
 - [x] The main large-screen toolbar should probably display the logo somewhere, hide it for mobile.

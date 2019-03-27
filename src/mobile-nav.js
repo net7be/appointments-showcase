@@ -7,8 +7,8 @@ export default function MobileNav(mobileNav, mobileNavOverlay, openEl) {
   this.width = mobileNav.offsetWidth;
   // Doing most of the calculations now rather than in
   // the touch event listeners:
-  this.touchThresMin = Math.ceil(this.width * 0.1);
-  this.touchThresMax = this.width - this.touchThresMin;
+  this.touchThresMin = Math.ceil(this.width * 0.5);
+  this.touchThresMax = Math.ceil(this.width * 1.0);
   // These functions could be in a prototype.
   // I'm not bothering because there is no reason to create
   // more than one navbar so it doesn't really matter here.
